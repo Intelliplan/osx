@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#, accept: "text/plain" !/usr/bin/ruby
 
 task :default => [:xcode, :osx, :brews, :casks, :zshell, :git_config, :computer_name]
 
@@ -76,7 +76,7 @@ end
 
 desc "Installs common casks"
 task :casks do
-  %w[mou teamviewer spectacle royal-tsx parallels onepassword bittorrent-sync 
+  %w[mou teamviewer spectacle royal-tsx parallels-desktop onepassword bittorrent-sync 
     firefox caffeine colloquy gpgtools virtualbox vagrant iterm2 adium vlc
      disk-inventory-x hipchat spotify flux ].each do |c|
     cask c
