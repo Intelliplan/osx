@@ -1,3 +1,4 @@
+# coding: utf-8
 #, accept: "text/plain" !/usr/bin/ruby
 
 task :default => [:xcode, :osx, :brews, :casks, :zshell, :git_config, :computer_name]
@@ -66,7 +67,7 @@ task :brews do
   sh "brew update"
   sh "brew upgrade"
   %w[awscli git vcsh mr jq ack openssl tree ucspi-tcp readline rbenv ruby-build 
-    nginx python python3 erlang tsung nmap sqlmap ngrep node mc
+    nginx python python3 erlang tsung nmap sqlmap ngrep node mc editorconfig
     rbenv-gem-rehash leiningen wget tmux elixir elixir-build].each do |r|
     brew r
   end
